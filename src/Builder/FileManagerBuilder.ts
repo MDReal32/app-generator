@@ -10,7 +10,7 @@ export class FileManagerBuilder extends Builder {
 
   constructor(private readonly root: string, private readonly config: IConfig) {
     super();
-    this.root ||= process.cwd();
+    this.root = this.root || process.cwd();
   }
 
   execute(command: string) {
