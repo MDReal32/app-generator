@@ -1,6 +1,6 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generates Multiple apps",
   "main": "dist/generate.js",
   "bin": {
@@ -43,5 +43,13 @@
     "express": "^4.17.1",
     "serve-static": "^1.14.1",
     "vite": "^2.3.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDReal32/app-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MDReal32/app-generator/issues"
+  },
+  "homepage": "https://github.com/MDReal32/app-generator#readme"
 }
