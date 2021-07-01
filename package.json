@@ -1,6 +1,6 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Generates Multiple apps",
   "main": "dist/generate.js",
   "bin": {
@@ -13,6 +13,9 @@
     "build": "tsc",
     "prepublishOnly": "tsc",
     "dev:reload": "nodemon src/index.ts"
+  },
+  "engines": {
+    "node": "^12"
   },
   "keywords": [
     "expressjs",
