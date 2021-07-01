@@ -1,11 +1,11 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "Generates Multiple apps",
   "main": "dist/generate.js",
   "bin": {
-    "app-generator": "bin/generator.js",
-    "generator": "bin/generator.js"
+    "app-generator": "bin/generator",
+    "generator": "bin/generator"
   },
   "scripts": {
     "start": "node dist/generate.js",
@@ -21,7 +21,18 @@
     "nextjs",
     "generator"
   ],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDReal32/app-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MDReal32/app-generator/issues"
+  },
+  "homepage": "https://github.com/MDReal32/app-generator#readme",
+  "author": {
+    "name": "MDReal",
+    "email": "mdrealiyev00@gmail.com"
+  },
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
@@ -49,13 +60,5 @@
     "express": "^4.17.1",
     "serve-static": "^1.14.1",
     "vite": "^2.3.8"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MDReal32/app-generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/MDReal32/app-generator/issues"
-  },
-  "homepage": "https://github.com/MDReal32/app-generator#readme"
+  }
 }
