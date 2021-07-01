@@ -12,5 +12,6 @@
     "importHelpers": true,
     "removeComments": true
   },
+  "include": ["./src/Technologies/React/Contents/.*.ts"],
   "exclude": ["node_modules", "lib", "test", "templates"]
 }
