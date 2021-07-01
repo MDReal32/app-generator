@@ -1,2 +1,4 @@
-# app-generator
-Generates React (Webpack &amp; ViteJS, SSR &amp; NoSSR), Express (Pure (express-generator) &amp; NestJS), Vue (WIP) apps with one command
+# App Generator
+
+Generates Express, React, Vue (WIP) apps with using own generators or custom.
+As bundler uses (For React & Vue) ViteJS or Webpack. Users can select it.
