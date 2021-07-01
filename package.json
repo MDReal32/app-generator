@@ -1,6 +1,6 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Generates Multiple apps",
   "main": "dist/generate.js",
   "bin": {
@@ -14,7 +14,13 @@
     "prepublishOnly": "tsc",
     "dev:reload": "nodemon src/index.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "expressjs",
+    "nestjs",
+    "react",
+    "nextjs",
+    "generator"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
