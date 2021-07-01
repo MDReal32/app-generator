@@ -5,10 +5,8 @@ Generates apps (Express, React) from template and/or documentation. Vue on WIP
 
 - [Installation](#installation)
 - [Usage](#usage)
-  * [Generator starts ask questions from you.](#generator-starts-ask-questions-from-you)
-    + [If selected Express](#if-selected-express)
-    + [If selected NestJS](#if-selected-nestjs)
-    + [If selected React](#if-selected-react)
+- [Future](#future)
+- [Help](#help)
 
 ## Installation
 ```shell
@@ -25,51 +23,25 @@ app-generator [destination]
 ```
 And
 ### Generator starts ask questions from you.
-`Which technology you want use?`
-- Express
-- React
-- Vue
 
-#### If selected Express
-`Which Framework do you want use?`
-- Express (Pure with express-generator)
-- NestJS
+[List of questions](./QUESTIONS.md)
 
-`Which Engine do you want to use MVC Model?`
-- NoView
-- EJS
-- HBS
-- HJS
-- Jade
-- Twig
-- Vash
-- Hogan
-- Pug
+## Future
 
-`Which CSS Preprocessor do you want to use?`
-- Plain
-- Less
-- Stylus
-- Compass
-- Sass
+I have planned in future finish Vue. Then include that technologies too.
 
-#### If selected NestJS
-`Do you want use TypeScript?`
-- Yes
-- No
+- Express - Desktop App
+- Java - Spring Boot
+- Java - Desktop App
+- Python - Django project
+- Python - Flask project
+- Adding additional selectable tools
+  * Sequelize (JavaScript/TypeScript)
+  * TypeOrm (JavaScript/TypeScript)
+  * Hibernate (Java)
 
-#### If selected React
-`Which bundler you want use?`
-- Webpack
-- ViteJS
-
-`Do you want SSR App?`
-- Yes
-- No
-
-`Do you want use TypeScript?`
-- Yes
-- No
+And make all it with best practice rules.  
+If you want see any other technology which didn't have in list let me know.
 
 ## Help
 For Help or feedback you can create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or Fork this project
