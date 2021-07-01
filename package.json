@@ -1,7 +1,7 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.0.10",
-  "description": "Generates Multiple apps",
+  "version": "1.0.11",
+  "description": "Generates apps (Express, React) from template and/or documentation. Vue on WIP",
   "main": "dist/generate.js",
   "bin": {
     "app-generator": "bin/generator",
