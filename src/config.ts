@@ -17,7 +17,7 @@ export enum Frameworks {
   NestJS = "nestjs"
 }
 
-export enum CSSEngine {
+export enum CSSPreProcessors {
   Plain = "plain",
   Less = "less",
   Stylus = "stylus",
@@ -43,7 +43,7 @@ export interface IConfig {
   framework: Frameworks;
   ssr: boolean;
   engine: Engines;
-  cssEngine: CSSEngine;
+  cssEngine: CSSPreProcessors;
   vueVersion: 2 | 3;
   ts: boolean;
 }
@@ -87,9 +87,9 @@ export const getConfig = async () => {
 
     const CssEngine: IConfig = await prompt({
       name: "cssEngine",
-      message: "Which CSS Engine do you want to use?",
+      message: "Which CSS Preprocessor do you want to use?",
       type: "list",
-      choices: Object.keys(CSSEngine)
+      choices: Object.keys(CSSPreProcessors)
     });
 
     answers.engine = Engine.engine;

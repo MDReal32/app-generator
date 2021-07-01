@@ -1,5 +1,5 @@
 import { CommandBuilder } from "../../Builder/CommandBuilder";
-import { CSSEngine, Engines, Frameworks, IConfig } from "../../config";
+import { CSSPreProcessors, Engines, Frameworks, IConfig } from "../../config";
 import { PackageManager } from "../../PackageManager/PackageManager";
 
 export const buildEngine = (engine: Engines, builder: CommandBuilder): void => {
@@ -12,10 +12,10 @@ export const buildEngine = (engine: Engines, builder: CommandBuilder): void => {
   }
 };
 
-export const buildCSSEngine = (cssEngine: CSSEngine, builder: CommandBuilder): void => {
-  if (cssEngine === CSSEngine.Plain) return;
+export const buildCSSEngine = (cssEngine: CSSPreProcessors, builder: CommandBuilder): void => {
+  if (cssEngine === CSSPreProcessors.Plain) return;
   // @ts-ignore
-  builder.addOption("css", CSSEngine[cssEngine.toString()]);
+  builder.addOption("css", CSSPreProcessors[cssEngine.toString()]);
 };
 
 const expressFrameworks: Record<
