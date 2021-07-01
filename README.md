@@ -70,3 +70,6 @@ And
 `Do you want use TypeScript?`
 - Yes
 - No
+
+## Help
+For Help or feedback you can create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or Fork this project
