@@ -1,16 +1,17 @@
 import { mkdir, writeFile } from "fs/promises";
 import { dirname, resolve } from "path";
-import { IConfig } from "../config";
+import { IConfig } from "../typescript/interfaces";
 import { Builder } from "./Builder";
 import { CommandBuilder } from "./CommandBuilder";
 
 export class FileManagerBuilder extends Builder {
   private files: Record<string, string> = {};
   private executeCommands: CommandBuilder[] = [];
+  private logging = false;
 
   constructor(private readonly root: string, private readonly config: IConfig) {
     super();
-    this.root = this.root || process.cwd();
+    this.root = this.root || config.root || process.cwd();
   }
 
   execute(command: string) {
@@ -35,11 +36,15 @@ export class FileManagerBuilder extends Builder {
   }
 
   log() {
+    this.logging = true;
     return this;
   }
 
   async build(root: string) {
     for (const [file, content] of Object.entries(this.files)) {
+      if (this.logging) {
+        console.log(`File: ${file}`);
+      }
       const filePath = resolve(root, file);
       await mkdir(dirname(filePath), { recursive: true });
       await writeFile(filePath, content);

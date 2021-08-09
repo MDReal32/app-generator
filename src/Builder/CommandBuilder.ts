@@ -1,4 +1,5 @@
-import spawn from "cross-spawn";
+import { spawn } from "cross-spawn";
+import { mkdirSync } from "fs";
 import { inspect } from "util";
 import { Builder } from "./Builder";
 
@@ -26,15 +27,10 @@ export class CommandBuilder extends Builder {
   addOption(key: string, value: any = true) {
     if (!key) throw new Error("No key");
     const dashes = key.length === 1 ? "-" : "--";
+    this.addArgument(`${dashes}${key}`);
 
-    if (typeof value === "boolean") {
-      if (value) {
-        this.cmd.push(`${dashes}${key}`);
-      } else {
-        this.cmd.push(`${dashes}${key}`, String(value));
-      }
-    } else {
-      this.cmd.push(`${dashes}${key}`, String(value));
+    if ((typeof value === "boolean" && !value) || typeof value !== "boolean") {
+      this.addArgument(String(value));
     }
 
     return this;
@@ -60,8 +56,11 @@ export class CommandBuilder extends Builder {
   }
 
   async build(root: string) {
+    mkdirSync(root, { recursive: true });
     this.cmd.push(this.otherCommandSymbol);
     let cmd: string[] = [];
+
+    console.log(root);
 
     while (this.cmd.length) {
       const cmdArg = this.cmd[0];
@@ -80,7 +79,5 @@ export class CommandBuilder extends Builder {
       }
       cmd.push(cmdArg as string);
     }
-
-    return;
   }
 }
