@@ -5,8 +5,8 @@ Generates apps (Express, React) from template and/or documentation. Vue on WIP
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Future](#future)
-- [Help](#help)
+- [Future](#future-plans)
+- [Help](#help-to-me)
 
 ## Installation
 ```shell
