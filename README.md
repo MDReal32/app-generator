@@ -1,5 +1,7 @@
+![Uploaded to NPM](https://github.com/MDReal32/app-generator/actions/workflows/publish.yml/badge.svg)
+
 # App Generator
-Generates apps (Express, React) from template and/or documentation. Vue on WIP
+Generate multi technology apps with one command
 
 # Table Of Contents
 
