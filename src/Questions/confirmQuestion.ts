@@ -1,5 +1,5 @@
 import { prompt } from "inquirer";
-import { Questions } from "../typescript/enums/Questions";
+import { Questions } from "../typescript/enums";
 
 export const confirmQuestion = async (
   question: Questions,
