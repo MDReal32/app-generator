@@ -12,7 +12,8 @@
     "dev": "ts-node src/index.ts",
     "build": "tsc",
     "prepublishOnly": "tsc",
-    "dev:reload": "nodemon src/index.ts"
+    "dev:reload": "nodemon src/index.ts",
+    "generate:questions": "nodemon ./scripts/generate-questions-md.ts"
   },
   "engines": {
     "node": ">=12"
