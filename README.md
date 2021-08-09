@@ -30,7 +30,7 @@ And
 
 ## Future Plans
 
-I have planned in future finish Vue. Then include that technologies too.
+Then include that technologies too.
 
 - Electron - Desktop App
 - Java - Spring Boot
