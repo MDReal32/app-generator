@@ -1,17 +1,13 @@
-import { mkdirSync } from "fs";
 import { Builder } from "./Builder/Builder";
-import { IConfig } from "./config";
-import { getPackageManager } from "./PackageManager";
+import { Technologies } from "./typescript/enums";
+import { IConfig } from "./typescript/interfaces";
 
-export const generate = (root: string, config: IConfig) => {
-  const packageManager = getPackageManager();
-
-  // @ts-ignore
-  const builder: Builder = require(`./Technologies/${config.technology}`)[config.technology](
-    config,
-    packageManager
-  );
-
-  mkdirSync(root, { recursive: true });
-  builder.log().build(root);
+export const generate = (config: IConfig) => {
+  const { technology, framework = "", bundler = "", ssr = false } = config;
+  const frameworkBundler = technology === Technologies.Express ? framework : bundler;
+  const isSSR = technology === Technologies.Express ? "" : `/${ssr ? "" : "no-"}ssr`;
+  const module = `./Technologies/${technology}/${frameworkBundler}${isSSR}`;
+  const { get } = require(module);
+  const builder: Builder = get(config);
+  builder.log().build(config.root);
 };
