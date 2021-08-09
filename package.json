@@ -1,7 +1,7 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.0.12",
-  "description": "Generates apps (Express, React) from template and/or documentation. Vue on WIP",
+  "version": "1.1.0",
+  "description": "Generate multi technology apps with one command",
   "main": "dist/generate.js",
   "bin": {
     "app-generator": "bin/generator",
@@ -15,7 +15,7 @@
     "dev:reload": "nodemon src/index.ts"
   },
   "engines": {
-    "node": "^12"
+    "node": ">=12"
   },
   "keywords": [
     "expressjs",
@@ -34,14 +34,14 @@
   "homepage": "https://github.com/MDReal32/app-generator#readme",
   "author": {
     "name": "MDReal",
-    "email": "mdrealiyev00@gmail.com"
+    "email": "mdrealiyev00@gmail.com",
+    "url": "https://github.com/MDReal32/app-generator"
   },
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
     "cross-spawn": "^7.0.3",
     "inquirer": "^8.1.1",
-    "spawn-cmd": "^0.0.2",
     "temp": "^0.9.4",
     "yargs": "^17.0.1"
   },
@@ -54,7 +54,6 @@
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.7",
     "prettier": "^2.3.2",
-    "prettier-plugin-organize-imports": "^2.2.0",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
   },
