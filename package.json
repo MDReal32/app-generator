@@ -11,7 +11,7 @@
     "start": "node dist/generate.js",
     "dev": "ts-node src/index.ts",
     "build": "tsc",
-    "prepublishOnly": "tsc",
+    "prepublishOnly": "tsc && ts-node ./scripts/generate-questions-md.ts",
     "dev:reload": "nodemon src/index.ts",
     "generate:questions": "nodemon ./scripts/generate-questions-md.ts"
   },
