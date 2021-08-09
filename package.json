@@ -1,6 +1,6 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Generate multi technology apps with one command",
   "main": "dist/generate.js",
   "bin": {
@@ -50,7 +50,6 @@
     "@types/inquirer": "^7.3.2",
     "@types/node": "^15.12.5",
     "@types/temp": "^0.9.0",
-    "@types/yargs": "^17.0.0",
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.7",
     "prettier": "^2.3.2",
