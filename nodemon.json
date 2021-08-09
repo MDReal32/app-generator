@@ -1,4 +1,4 @@
 {
-  "exec": "ts-node",
-  "ignore": ["./app"]
+  "exec": "rimraf ./app* && node -e \"console.clear();\" && ts-node",
+  "ignore": ["./app*"]
 }
