@@ -26,11 +26,11 @@ And
 
 [List of questions](./QUESTIONS.md)
 
-## Future
+## Future Plans
 
 I have planned in future finish Vue. Then include that technologies too.
 
-- Express - Desktop App
+- Electron - Desktop App
 - Java - Spring Boot
 - Java - Desktop App
 - Python - Django project
@@ -43,5 +43,5 @@ I have planned in future finish Vue. Then include that technologies too.
 And make all it with best practice rules.  
 If you want see any other technology which didn't have in list let me know.
 
-## Help
-For Help or feedback you can create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or Fork this project
+## Help to me
+For Help or feedback you can create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or [Fork this project](https://github.com/MDReal32/app-generator)
