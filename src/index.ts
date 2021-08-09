@@ -1,16 +1,18 @@
-import { resolve } from "path";
-import yargs from "yargs";
-import { getConfig } from "./config";
 import { generate } from "./generate";
+import { Bundlers, Technologies } from "./typescript/enums";
+import { IConfig } from "./typescript/interfaces";
 
-// @ts-ignore
-const name = yargs.command("[root]", "").parse()._[0];
-if (!name) {
-  console.error(`Usage ${process.argv[0]} ${process.argv[1]} [root-dir]`);
-  process.exit(1);
-}
+const root = "W:\\Projects\\Tech\\NodeJSApps\\app-generator\\app";
 
-const root = resolve(process.cwd(), name as string);
-getConfig().then(config => {
-  generate(root, config);
-});
+const config: IConfig = {
+  root,
+  name: "app",
+  description: "Description",
+  author: "MDReal <veysaliyev00@gmail.com>",
+  technology: Technologies.Vue,
+  bundler: Bundlers.ViteJS,
+  ssr: true,
+  typescript: true
+};
+
+generate(config);
