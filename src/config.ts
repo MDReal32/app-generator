@@ -1,16 +1,15 @@
-import { prompt } from "inquirer";
-
-export enum Technologies {
-  Express = "Express",
-  React = "React"
-  // Vue = "Vue"
-}
-
-export enum Bundlers {
-  Webpack = "webpack",
-  // Parcel = "parcel",
-  ViteJS = "vitejs"
-}
+import { prompts } from "inquirer";
+import { basename, dirname, resolve } from "path";
+import { confirmQuestion, listQuestion, question } from "./Questions";
+import {
+  Bundlers,
+  CSSPreProcessors,
+  Engines,
+  Frameworks,
+  Questions,
+  Technologies
+} from "./typescript/enums";
+import { IConfig } from "./typescript/interfaces";
 
 export enum Frameworks {
   Express = "expressjs",
