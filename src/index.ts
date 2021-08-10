@@ -1,8 +1,9 @@
 import { generate } from "./generate";
 import { Bundlers, Technologies } from "./typescript/enums";
 import { IConfig } from "./typescript/interfaces";
+import { resolve } from "path";
 
-const root = "W:\\Projects\\Tech\\NodeJSApps\\app-generator\\app";
+const root = resolve(process.cwd(), "app");
 
 const config: IConfig = {
   root,
