@@ -12,6 +12,6 @@
     "importHelpers": true,
     "removeComments": true
   },
-  "include": ["./src/**/.*.ts"],
+  "include": ["./src/**/*.ts", "./src/**/.*.ts"],
   "exclude": ["node_modules", "lib", "test", "templates", "scripts"]
 }
