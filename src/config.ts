@@ -70,7 +70,7 @@ export const getConfig = async (root: string): Promise<IConfig> => {
     config.bundler = Bundlers.Webpack;
   }
 
-  if (config.vueVersion === 3) {
+  if (config.vueVersion && parseInt(config.vueVersion.toString()) === 3) {
     const bundler = await listQuestion<keyof typeof Bundlers>(
       Questions.BUNDLER,
       ...Object.keys(Bundlers)
