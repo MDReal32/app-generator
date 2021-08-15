@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 const { getConfig } = require("../dist/config");
 const { generate } = require("../dist/generate");
+const  yargs = require('yargs')
+const {version} = require("../package.json")
 
-getConfig().then(config => {
+yargs.version(version).parse()
+
+getConfig(process.cwd()).then(config => {
   generate(config);
 });
