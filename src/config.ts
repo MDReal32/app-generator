@@ -1,4 +1,3 @@
-import { prompts } from "inquirer";
 import { basename, dirname, resolve } from "path";
 import { confirmQuestion, listQuestion, question } from "./Questions";
 import {
@@ -95,8 +94,6 @@ export const getConfig = async (root: string): Promise<IConfig> => {
     config.typescript = await confirmQuestion(Questions.TYPESCRIPT);
   }
   /// </Typescript>
-
-  console.log(prompts);
 
   return config;
 };
