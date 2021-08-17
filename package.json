@@ -1,6 +1,6 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Generate multi technology apps with one command",
   "main": "dist/generate.js",
   "bin": {
@@ -19,11 +19,16 @@
     "node": ">=12"
   },
   "keywords": [
-    "expressjs",
-    "nestjs",
+    "app-generator",
+    "generator",
+    "vue",
     "react",
-    "nextjs",
-    "generator"
+    "vuejs",
+    "express",
+    "express-generator",
+    "reactjs",
+    "nest",
+    "nestjs"
   ],
   "repository": {
     "type": "git",
