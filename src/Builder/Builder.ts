@@ -3,7 +3,7 @@ export class Builder {
     throw new Error();
   }
 
-  build(root: string) {
+  async build(root: string) {
     throw new Error();
   }
 }
