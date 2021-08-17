@@ -10,7 +10,9 @@ export const getDependencyCommands = (config: IConfig, packageManager: PackageMa
     "serve-static",
     "cross-env",
     "express",
-    "vite"
+    "vite",
+    "@types/prettier",
+    "@types/html-minifier"
   ];
 
   if (config.technology === Technologies.React)
