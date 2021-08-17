@@ -1,5 +1,6 @@
 import { IConfig } from "../typescript/interfaces";
 import { Technologies } from "../typescript/enums";
+import { PackageJson } from "type-fest";
 
 export const getContent = (config: IConfig): string => {
   const ext =
