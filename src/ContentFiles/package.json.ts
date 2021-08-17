@@ -7,8 +7,9 @@ export const getContent = (config: IConfig): string => {
   const node = config.typescript ? "ts-node" : "node";
   const name = config.technology === Technologies.React ? "react" : "vue";
 
-  const packageJSON = {
-    name: `ssr-${name}`,
+  const packageJSON: PackageJson = {
+    name,
+    description: config.description,
     private: true,
     version: "0.0.0",
     scripts: {
@@ -19,8 +20,9 @@ export const getContent = (config: IConfig): string => {
       "generate": `vite build --ssrManifest --outDir dist/static && yarn build:server && ${node} prerender`,
       "serve": `cross-env NODE_ENV=production ${node} server`
     },
-    dependencies: [],
-    devDependencies: []
+    author: config.author,
+    dependencies: {},
+    devDependencies: {}
   };
 
   return JSON.stringify(packageJSON, null, 2);
