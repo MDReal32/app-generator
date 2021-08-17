@@ -8,7 +8,7 @@ Generate multi technology apps with one command
 - [Installation](#installation)
 - [Usage](#usage)
 - [Future](#future-plans)
-- [Help](#help-to-me)
+- [Help](#for-help)
 
 ## Installation
 ```shell
@@ -20,30 +20,28 @@ yarn global add @mdreal/app-generator
 ## Usage
 
 ```shell
-app-generator [destination]
-// generator [destination]
+$ app-generator [destination]
+# OR
+$ generator [destination]
 ```
-And
-### Generator starts ask questions from you.
-
-[List of questions](./QUESTIONS.md)
+And generator starts ask [this questions](./QUESTIONS.md) from you.
 
 ## Future Plans
 
-Then include that technologies too.
+I Plan add new that technologies to generator. If you want see any another technology or technologies let me know. 
 
-- Electron - Desktop App
-- Java - Spring Boot
-- Java - Desktop App
-- Python - Django project
-- Python - Flask project
-- Adding additional selectable tools
+- Electron
+  - Desktop Application
+- Java
+  - Desktop Application
+  - Spring Boot
+- Python 
+  - Django project
+  - Flask project
+- Additional selectable technologies
   * Sequelize (JavaScript/TypeScript)
   * TypeOrm (JavaScript/TypeScript)
   * Hibernate (Java)
 
-And make all it with best practice rules.  
-If you want see any other technology which didn't have in list let me know.
-
-## Help to me
-For Help or feedback you can create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or [Fork this project](https://github.com/MDReal32/app-generator)
+## For Help
+You can feed back or create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or [Fork this project](https://github.com/MDReal32/app-generator)
