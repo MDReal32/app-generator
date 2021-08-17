@@ -60,8 +60,6 @@ export class CommandBuilder extends Builder {
     this.cmd.push(this.otherCommandSymbol);
     let cmd: string[] = [];
 
-    console.log(root);
-
     while (this.cmd.length) {
       const cmdArg = this.cmd[0];
       this.cmd.splice(0, 1);
