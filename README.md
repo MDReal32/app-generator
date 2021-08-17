@@ -44,4 +44,4 @@ I Plan add new that technologies to generator. If you want see any another techn
   * Hibernate (Java)
 
 ## For Help
-You can feed back or create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or [Fork this project](https://github.com/MDReal32/app-generator)
+You can feed back or create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or [Fork this project](https://github.com/MDReal32/app-generator/fork)
