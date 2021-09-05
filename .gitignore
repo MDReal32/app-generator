@@ -203,3 +203,4 @@ fabric.properties
 yarn.lock
 /configs/
 /xconf/
+package-lock.json 
