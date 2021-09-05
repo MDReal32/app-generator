@@ -97,3 +97,4 @@ export const getConfig = async (root: string): Promise<IConfig> => {
 
   return config;
 };
+
