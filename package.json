@@ -1,6 +1,6 @@
 {
   "name": "@mdreal/app-generator",
-  "version": "1.1.10",
+  "version": "1.1.11",
   "description": "Generate multi technology apps with one command",
   "main": "dist/generate.js",
   "bin": {
