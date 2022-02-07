@@ -42,6 +42,8 @@ I Plan add new that technologies to generator. If you want see any another techn
   * Sequelize (JavaScript/TypeScript)
   * TypeOrm (JavaScript/TypeScript)
   * Hibernate (Java)
+- Additional Functionalities
+  * Generator UI
 
 ## For Help
 You can feed back or create an issue in [GitHub](https://github.com/MDReal32/app-generator/issues/new) or [Fork this project](https://github.com/MDReal32/app-generator/fork)
